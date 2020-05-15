@@ -15,10 +15,17 @@
                 <button id="boton2" class="botones-top"><img src="iconos/arrowright.png" alt=""></button>
                 <button id="boton3" class="botones-top"><img src="iconos/arrowright.png" alt=""></button>
             </article>
-            <div class="pantalla">
-                <p id="titulo">¡Bienvenido al Banco!</p>
-                Por favor digite su clave.
-                <input id="caja-password" type="password" maxlength=9>  
+            <div class="pantalla-menu">
+                <p id="titulo-menu">INGRESAR MONTO A RETIRAR EN MULTIPLOS DE 10</p>
+                <div class="opciones-padre-4">
+                    <div class="opciones-der-4">
+                        <p>Transferencia</p> <br><br>
+                        <p>Ultimos Movimientos</p>
+                    </div>
+                    <div class="figura-de-4">
+                        <img src="/iconos/flechasnaranja-der.png" alt="">
+                    </div>
+                </div>
             </div>
             <article id="article2">
                 <button id="boton4" class="botones-top"><img src="iconos/arrowleft.png" alt=""></button>
@@ -44,7 +51,7 @@
             <article class="opciones">
                 <button id="cancel" class="boton-op">CANCEL</button>
                 <button id="clear" class="boton-op">CLEAR</button>
-                <button type="reset" onclick="ok()" id="ok" class="boton-op">OK</button>
+                <button id="ok" class="boton-op">OK</button>
                 <button id="void" class="boton-op"></button>
             </article>
             <section class="relleno">
@@ -69,7 +76,6 @@
     </section>
     <script src="JS/numeros.js"></script>
     <script src="JS/clear.js"></script>
-    <script src="/JS/ok.js"></script>
-    <script src="/JS/cancel.js"></script>
+    <script src="/JS/retiro.js"></script>
 </body>
 </html>

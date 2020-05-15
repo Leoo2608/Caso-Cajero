@@ -2,8 +2,19 @@
     margin: 0;
     padding: 0;
 }
+/* index.html */
 body{
     background-color: rgb(253, 246, 237);
+}
+.pantalla{ 
+    width: 420px;
+    height: 235px;
+    background-image:linear-gradient(to bottom,rgb(250, 250, 98),rgb(255, 246, 163) ) ;
+    margin: 5px 10px 5px 10px;
+    border: rgb(97, 96, 96) 10px solid;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 20px;
 }
 .caja-principal{
     width: 640px;
@@ -38,22 +49,25 @@ body{
     height: 240px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+    margin-top: 50px;
 }
 #article2{
     height: 240px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+    margin-top: 50px;
 }
 .botones-top{
     width: 55px;
     height: 31px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 13px;
+    margin-bottom: 13px;
     border-radius: 7px ;
     border: rgb(0, 0, 0) 1.5px solid;
     background-image: linear-gradient(to top, black, rgb(97, 97, 97));
+    
 }
 .caja-inferior{
     width: 610px;
@@ -143,4 +157,119 @@ body{
 .relleno #deposit{
     width: 280px;
     height: 50px;  
+}
+/*=============menu.html=============*/
+.pantalla-menu{ 
+    width: 420px;
+    height: 235px;
+    background-image:linear-gradient(to bottom,rgb(250, 250, 98),rgb(255, 246, 163) ) ;
+    margin: 5px 10px 5px 10px;
+    border: rgb(97, 96, 96) 10px solid;
+    border-radius: 8px;
+    padding: 14px 0px 14px 0px;
+    font-size: 20px;
+}
+#titulo-menu{
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+}
+.opciones-padre{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+}
+.opciones-der{ 
+    text-align: right;
+    width: 180px;
+}
+.opciones-izq p{
+    margin-top: 28px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.opciones-der p{
+    margin-top: 28px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.figura-izq{
+    height: 190px;
+    padding-top: 5px;
+}
+.figura-der{
+    height: 190px;
+    padding-top: 8px;
+}
+/*=============retiro.html=============*/
+.opciones-padre2{
+    display: flex;
+    justify-content: space-between;
+
+}
+/*=============retirosoles.html=============*/
+.opciones-izq3{
+    display: flex;
+    text-align: left;
+    width: 100px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+.opciones-der3{
+    display: flex;
+    align-content: right;
+    width: 100px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    text-align: right;
+    clear: both;
+    width: 120px;
+}
+.opciones-izq3 p{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: right;
+    margin-left: 10px ;
+}
+.opciones-der3 p{
+    width: 200px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 20px;
+}
+.opciones-padre3{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+#DER{
+    width: 150x;
+    display: flex;
+    height: 215px;
+}
+#IZQ{
+    width: 120px;
+    display: flex;
+}
+.botones-top-2{
+    width: 55px;
+    height: 31px;
+    margin-top: 10px;
+    margin-bottom: 9px;
+    border-radius: 7px ;
+    border: rgb(0, 0, 0) 1.5px solid;
+    background-image: linear-gradient(to top, black, rgb(97, 97, 97));
+}
+/*-------otrascantidades.html---------*/
+.opciones-padre-4{
+    width: 400px;
+    display: flex;
+    
+}
+.opciones-der-4{
+
+}
+.figura-der-4{
+
 }
