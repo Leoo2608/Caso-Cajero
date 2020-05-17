@@ -1,5 +1,6 @@
-document.getElementById("boton1").addEventListener("click",retirosoles);
-
-function retirosoles(){
-    window.location = "retirosoles.html"
+function otrascantidades(){
+    window.location = "otrascantidades.html"
+}
+function returnretiro(){
+    window.location = "retiro.html"
 }

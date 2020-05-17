@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/estilos.css">
     <link rel="stylesheet" href="/CSS/pantalla.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
     <title></title>
 </head>
 <body>
@@ -15,22 +16,27 @@
                 <button id="boton2" class="botones-top"><img src="iconos/arrowright.png" alt=""></button>
                 <button id="boton3" class="botones-top"><img src="iconos/arrowright.png" alt=""></button>
             </article>
-            <div class="pantalla-menu">
-                <p id="titulo-menu">INGRESAR MONTO A RETIRAR EN MULTIPLOS DE 10</p>
+            <div class="pantalla-otrascantidades">
+                <div class="superior">
+                    <p id="titulo-otrascantidades">INGRESAR MONTO A RETIRAR 
+                        <br> EN MULTIPLOS DE 10</p>
+                    <input id="caja-password" type="text" placeholder="S/..." disabled> 
+                </div>
                 <div class="opciones-padre-4">
                     <div class="opciones-der-4">
-                        <p>Transferencia</p> <br><br>
-                        <p>Ultimos Movimientos</p>
+                        <p>Confirmar</p>
+                        <p>Corregir</p>
+                        <p>Cancelar</p>
                     </div>
-                    <div class="figura-de-4">
-                        <img src="/iconos/flechasnaranja-der.png" alt="">
+                    <div class="figura-der-4">
+                        <img src="iconos/naranjitaremp.png" alt="">
                     </div>
                 </div>
             </div>
-            <article id="article2">
-                <button id="boton4" class="botones-top"><img src="iconos/arrowleft.png" alt=""></button>
-                <button id="boton5" class="botones-top"><img src="iconos/arrowleft.png" alt=""></button>
-                <button id="boton6" class="botones-top"><img src="iconos/arrowleft.png" alt=""></button>
+            <article id="article2-otrascantidades">
+                <button onclick="confirmacion()" id="boton4" class="botones-top-otrascantidades"><img src="iconos/arrowleft.png" alt=""></button>
+                <button id="boton5" onclick="cancel()" class="botones-top-otrascantidades"><img src="iconos/arrowleft.png" alt=""></button>
+                <button onclick="returnretirosoles()" id="boton6" class="botones-top-otrascantidades"><img src="iconos/arrowleft.png" alt=""></button>
             </article>
         </section>
         <section class="caja-inferior">
@@ -49,33 +55,33 @@
                 <button id="n12" class="botones-numero">.</button>
             </div>
             <article class="opciones">
-                <button id="cancel" class="boton-op">CANCEL</button>
-                <button id="clear" class="boton-op">CLEAR</button>
-                <button id="ok" class="boton-op">OK</button>
+                <button id="cancel"  onclick="cancel()" class="boton-op">CANCEL</button>
+                <button id="clean"  onclick="clean()" class="boton-op">CLEAR</button>
+                <button id="ok" onclick="ok()" class="boton-op">OK</button>
                 <button id="void" class="boton-op"></button>
             </article>
             <section class="relleno">
                 <article id="card" class="cajitas">
                     <p>CARD</p>
-                    <div> <div></div></div>
+                    <img src="imagenes/cajita1remp.png" alt="">
                 </article>
                 <article id="receipt" class="cajitas">
                     <p>RECEIPT</p>
-                    <div> <div></div></div>
+                    <img src="imagenes/cajita2.png" alt="">
                 </article>                
                 <article id="cash" class="cajitas">
                     <p>CASH</p>
-                    <div> <div></div></div>
+                    <img src="imagenes/cajitancha.png" alt="">
                 </article>
                 <article id="deposit" class="cajitas">
                     <p>DEPOSIT</p>
-                    <div> <div></div></div>
+                    <img src="imagenes/cajitancha.png" alt="">
                 </article>
             </section>
         </section>
     </section>
     <script src="JS/numeros.js"></script>
-    <script src="JS/clear.js"></script>
-    <script src="/JS/retiro.js"></script>
+    <script src="JS/otrascantidades.js"></script>
+    <script src="JS/opciones.js"></script>
 </body>
 </html>

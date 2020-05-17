@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/estilos.css">
     <link rel="stylesheet" href="/CSS/pantalla.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
     <title></title>
 </head>
 <body>
     <section class="caja-principal">
         <section class="caja-superior">
             <article id="article1">
-                <button id="boton1" class="botones-top"><img src="iconos/arrowright.png" alt=""></button>
+                <button onclick="retiro()" id="boton1" class="botones-top"><img src="iconos/arrowright.png" alt=""></button>
                 <button id="boton2" class="botones-top"><img src="iconos/arrowright.png" alt=""></button>
                 <button id="boton3" class="botones-top"><img src="iconos/arrowright.png" alt=""></button>
             </article>
@@ -27,7 +28,7 @@
                         <p>Operaciones</p>
                     </div>
                     <div class="opciones-der">
-                        <p>Transferencia</p> <br><br>
+                        <p>Transferencia</p> <br>
                         <p>Ultimos Movimientos</p>
                     </div>
                     <div class="figura-der">
@@ -58,32 +59,30 @@
             </div>
             <article class="opciones">
                 <button id="cancel" class="boton-op">CANCEL</button>
-                <button id="clear" class="boton-op">CLEAR</button>
+                <button id="clean" class="boton-op">CLEAR</button>
                 <button id="ok" class="boton-op">OK</button>
                 <button id="void" class="boton-op"></button>
             </article>
             <section class="relleno">
                 <article id="card" class="cajitas">
                     <p>CARD</p>
-                    <div> <div></div></div>
+                    <img src="imagenes/cajita1remp.png" alt="">
                 </article>
                 <article id="receipt" class="cajitas">
                     <p>RECEIPT</p>
-                    <div> <div></div></div>
+                    <img src="imagenes/cajita2.png" alt="">
                 </article>                
                 <article id="cash" class="cajitas">
                     <p>CASH</p>
-                    <div> <div></div></div>
+                    <img src="imagenes/cajitancha.png" alt="">
                 </article>
                 <article id="deposit" class="cajitas">
                     <p>DEPOSIT</p>
-                    <div> <div></div></div>
+                    <img src="imagenes/cajitancha.png" alt="">
                 </article>
             </section>
         </section>
     </section>
-    <script src="JS/numeros.js"></script>
-    <script src="JS/clear.js"></script>
-    <script src="/JS/retiro.js"></script>
+    <script src="JS/menu.js"></script>
 </body>
 </html>

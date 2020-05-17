@@ -16,40 +16,25 @@
                 <button id="boton2" class="botones-top"><img src="iconos/arrowright.png" alt=""></button>
                 <button id="boton3" class="botones-top"><img src="iconos/arrowright.png" alt=""></button>
             </article>
-            <div class="pantalla-menu">
-                <p id="titulo-menu">RETIRO</p>
-                <div class="opciones-padre3">
-                    <div id="IZQ">
-                        <div class="figura-izq">
-                            <img src="/iconos/flechasnaranja-izq.png" alt="">
-                        </div>
-                        <div class="opciones-izq3">
-                            <p>S/.20</p> 
-                            <p>S/.150</p>
-                            <p>S/.300</p>                    
-                        </div>
+            <div class="pantalla-otrascantidades">
+                <div class="superior">
+                    <p class="titulo-transaccion">TRANSACCION PROCESADA</p>
+                    <p class="titulo-transaccion">¿Desea realizar otra transacción?</p>
+                </div>
+                <div class="opciones-padre-transaccion">
+                    <div class="opciones-der-transaccion">
+                        <p>Si</p>
+                        <p>No</p>
                     </div>
-                
-                    <div id="DER">
-                        <div class="opciones-der3">
-                            <p>S/.100</p> 
-                            <p>S/.200</p>
-                            <p>Otras Cantidades</p>
-                            <p>Cancelar</p>
-                        </div>
-                        <div class="figura-der-retirosoles">
-                            <img src="/iconos/naranjas4.png" alt="">
-                        </div>
+                    <div class="figura-der-transaccion">
+                        <img src="iconos/2flechas.png" alt="">
                     </div>
-                 
-
                 </div>
             </div>
-            <article id="article2">
-                <button id="boton4" class="botones-top-3"><img src="iconos/arrowleft.png" alt=""></button>
-                <button id="boton5" class="botones-top-3"><img src="iconos/arrowleft.png" alt=""></button>
-                <button onclick="otrascantidades()" id="boton6" class="botones-top-3"><img src="iconos/arrowleft.png" alt=""></button>
-                <button onclick="returnretiro()" id="boton7" class="botones-top-3"><img src="/iconos/arrowleft.png" alt=""> </button>
+            <article id="article2-otrascantidades">
+                <button id="boton4" class="botones-top-otrascantidades"><img src="iconos/arrowleft.png" alt=""></button>
+                <button onclick="returnmenu()" id="boton5" class="botones-top-otrascantidades"><img src="iconos/arrowleft.png" alt=""></button>
+                <button onclick="final()" id="boton6" class="botones-top-otrascantidades"><img src="iconos/arrowleft.png" alt=""></button>
             </article>
         </section>
         <section class="caja-inferior">
@@ -93,6 +78,7 @@
             </section>
         </section>
     </section>
-    <script src="/JS/retirosoles.js"></script>
+    <script src="JS/retiro.js" ></script>
+    <script src="/JS/transaccion.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/estilos.css">
     <link rel="stylesheet" href="/CSS/pantalla.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
     <title></title>
 </head>
 <body>
@@ -18,7 +19,7 @@
             <div class="pantalla">
                 <p id="titulo">¡Bienvenido al Banco!</p>
                 Por favor digite su clave.
-                <input id="caja-password" type="password" maxlength=9>  
+                <input id="caja-password" type="password" disabled>  
             </div>
             <article id="article2">
                 <button id="boton4" class="botones-top"><img src="iconos/arrowleft.png" alt=""></button>
@@ -42,34 +43,32 @@
                 <button id="n12" class="botones-numero">.</button>
             </div>
             <article class="opciones">
-                <button id="cancel" class="boton-op">CANCEL</button>
-                <button id="clear" class="boton-op">CLEAR</button>
-                <button type="reset" onclick="ok()" id="ok" class="boton-op">OK</button>
+                <button id="cancel" onclick="cancel()" class="boton-op">CANCEL</button>
+                <button id="clean"  onclick="clean()" class="boton-op">CLEAR</button>
+                <button onclick="ok()" id="ok" class="boton-op" type="reset">OK</button>
                 <button id="void" class="boton-op"></button>
             </article>
             <section class="relleno">
                 <article id="card" class="cajitas">
                     <p>CARD</p>
-                    <div> <div></div></div>
+                    <img src="imagenes/cajita1remp.png" alt="">
                 </article>
                 <article id="receipt" class="cajitas">
                     <p>RECEIPT</p>
-                    <div> <div></div></div>
+                    <img src="imagenes/cajita2.png" alt="">
                 </article>                
                 <article id="cash" class="cajitas">
                     <p>CASH</p>
-                    <div> <div></div></div>
+                    <img src="imagenes/cajitancha.png" alt="">
                 </article>
                 <article id="deposit" class="cajitas">
                     <p>DEPOSIT</p>
-                    <div> <div></div></div>
+                    <img src="imagenes/cajitancha.png" alt="">
                 </article>
             </section>
         </section>
     </section>
     <script src="JS/numeros.js"></script>
-    <script src="JS/clear.js"></script>
-    <script src="/JS/ok.js"></script>
-    <script src="/JS/cancel.js"></script>
+    <script src="/JS/opciones.js" ></script>
 </body>
 </html>

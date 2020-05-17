@@ -4,7 +4,29 @@
 }
 /* index.html */
 body{
-    background-color: rgb(253, 246, 237);
+    background-image: url(/imagenes/yco8oy7ki.jpg);
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    height: 600px;
+}
+.caja-principal{
+    border: 3px solid rgb(0, 0, 0);
+    width: 640px;
+    height: 530px;
+    background-color: rgb(156, 156, 156);
+    background-image: linear-gradient(to bottom, rgb(139, 139, 139), rgb(153, 150, 150));
+    margin: auto;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.caja-superior{
+    width: 610px;
+    height: 290px;
+    padding: 0px 15px 10px 15px;
+    display: flex;
+    justify-content: space-between;
 }
 .pantalla{ 
     width: 420px;
@@ -15,23 +37,6 @@ body{
     border-radius: 8px;
     padding: 14px;
     font-size: 20px;
-}
-.caja-principal{
-    width: 640px;
-    height: 530px;
-    background-color: rgb(156, 156, 156);
-    background-image: linear-gradient(to bottom, rgb(139, 139, 139), rgb(153, 150, 150));
-    margin: auto;
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
-}
-.caja-superior{
-    width: 610px;
-    height: 290px;
-    padding: 0px 15px 10px 15px;
-    display: flex;
-    justify-content: space-between;
 }
 #titulo{
     font-weight: bold;
@@ -67,7 +72,6 @@ body{
     border-radius: 7px ;
     border: rgb(0, 0, 0) 1.5px solid;
     background-image: linear-gradient(to top, black, rgb(97, 97, 97));
-    
 }
 .caja-inferior{
     width: 610px;
@@ -85,14 +89,6 @@ body{
 }
 .opciones{
     width: 120px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-}
-.relleno{
-    width: 305px;
-    border: 1px black solid;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -121,7 +117,7 @@ body{
     background-color: red;
     color: rgb(220, 221, 211);
 }
-.opciones #clear{
+.opciones #clean{
     background-color:rgb(255, 166, 0);
     color: rgb(220, 221, 211);
 }
@@ -133,30 +129,39 @@ body{
     border: none;
     background-color: rgb(109, 109, 109);
 }
+.relleno{
+    height: 200px;
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
 .relleno .cajitas{
     width: 96px;
     height: 50px;
-    border: 1px black solid;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+    padding: 0px 5px 5px 5px;
     color: white;
     font-weight: bold;
 }
+.relleno .cajitas p{
+    padding: 5px;
+}
 .relleno #card{
-    width: 100px;
-    height: 50px;
+    width: 130px;
+    height: 65px;
 }
 .relleno #receipt{
-    width: 140px;
-    height: 50px;
+    width: 160px;
+    height: 65px;
 }
 .relleno #cash{
-    width: 280px;
-    height: 50px;
+    width: 300px;
+    height: 65px;
 }
 .relleno #deposit{
-    width: 280px;
-    height: 50px;  
+    width: 300px;
+    height: 65px;  
 }
 /*=============menu.html=============*/
 .pantalla-menu{ 
@@ -184,12 +189,13 @@ body{
     width: 180px;
 }
 .opciones-izq p{
-    margin-top: 28px;
+    margin-top: 22px;
     font-size: 22px;
     font-weight: bold;
 }
 .opciones-der p{
-    margin-top: 28px;
+    margin-top: 20px;
+    margin-bottom: 16px;
     font-size: 22px;
     font-weight: bold;
 }
@@ -202,45 +208,20 @@ body{
     padding-top: 8px;
 }
 /*=============retiro.html=============*/
-.opciones-padre2{
-    display: flex;
-    justify-content: space-between;
-
+.opciones-der-retiro{ 
+    text-align: right;
+    width: 180px;
+}
+.opciones-der-retiro p{
+    margin-top: 21px;
+    margin-bottom: 35px;
+    font-size: 22px;
+    font-weight: bold;
 }
 /*=============retirosoles.html=============*/
-.opciones-izq3{
-    display: flex;
-    text-align: left;
-    width: 100px;
-    flex-wrap: wrap;
-    margin-top: 25px;
-}
-.opciones-der3{
-    display: flex;
-    align-content: right;
-    width: 100px;
-    flex-wrap: wrap;
-    margin-top: 25px;
-    text-align: right;
-    clear: both;
-    width: 120px;
-}
-.opciones-izq3 p{
-    font-size: 22px;
-    font-weight: bold;
-    text-align: right;
-    margin-left: 10px ;
-}
-.opciones-der3 p{
-    width: 200px;
-    font-size: 22px;
-    font-weight: bold;
-    text-align: right;
-    margin-right: 20px;
-}
 .opciones-padre3{
     display: flex;
-    margin-top: 10px;
+    margin-top: 4px;
     justify-content: space-between;
 }
 #DER{
@@ -252,7 +233,37 @@ body{
     width: 120px;
     display: flex;
 }
-.botones-top-2{
+.opciones-izq3{
+    display: flex;
+    text-align: left;
+    width: 100px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.opciones-der3{
+    display: flex;
+    align-content: right;
+    width: 100px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    text-align: right;
+    clear: both;
+    width: 120px;
+}
+.opciones-izq3 p{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    margin-left: 15px ;
+}
+.opciones-der3 p{
+    width: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 20px;
+}
+.botones-top-3{
     width: 55px;
     height: 31px;
     margin-top: 10px;
@@ -262,14 +273,107 @@ body{
     background-image: linear-gradient(to top, black, rgb(97, 97, 97));
 }
 /*-------otrascantidades.html---------*/
-.opciones-padre-4{
-    width: 400px;
-    display: flex;
-    
+.pantalla-otrascantidades{ 
+    width: 420px;
+    height: 235px;
+    background-image:linear-gradient(to bottom,rgb(250, 250, 98),rgb(255, 246, 163) ) ;
+    margin: 5px 10px 5px 10px;
+    border: rgb(97, 96, 96) 10px solid;
+    border-radius: 8px;
+    padding: 14px 0px 14px 0px;
+    font-size: 18px;  
+    font-weight: bold;  
+    text-align: right;
 }
-.opciones-der-4{
-
+.superior{
+    text-align: center;
+}
+.opciones-padre-4{
+    width: 420px;
+    height: 150px;
+    display: flex;
+    justify-content: flex-end;
+}
+.opciones-der-4 p{
+    margin: 13px 15px 16px 0px;
 }
 .figura-der-4{
-
+    margin-bottom: 5px;
+}
+#article2-otrascantidades{
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+.botones-top-otrascantidades{
+    width: 55px;
+    height: 31px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 7px ;
+    border: rgb(0, 0, 0) 1.5px solid;
+    background-image: linear-gradient(to top, black, rgb(97, 97, 97));
+    
+}
+/*-----------transaccion.html------------*/
+.opciones-padre-transaccion{
+    width: 420px;
+    height: 150px;
+    display: flex;
+    justify-content: flex-end;
+}
+.opciones-der-transaccion{
+    margin: 15px 15px 23px 0px;
+}
+.pantalla-trasaccion{
+    width: 420px;
+    height: 235px;
+    background-image:linear-gradient(to bottom,rgb(250, 250, 98),rgb(255, 246, 163) ) ;
+    margin: 5px 10px 5px 10px;
+    border: rgb(97, 96, 96) 10px solid;
+    border-radius: 8px;
+    padding: 14px 0px 14px 0px;
+    font-size: 20px;    
+    text-align: right;
+}
+.titulo-transaccion{
+    font-size: 22px;
+    font-weight: bold;
+}
+.opciones-padre-transaccion{
+    width: 420px;
+    height: 190px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+.opciones-der-transaccion p{
+    margin: 22px 10px 10px 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.opciones-der-transaccion{
+    margin-top: 60px;
+}
+.figura-der-transaccion{
+    margin-top: 71px;
+}
+/*----final.html------*/
+.pantalla-final{
+    width: 420px;
+    height: 235px;
+    background-image:linear-gradient(to bottom,rgb(250, 250, 98),rgb(255, 246, 163) ) ;
+    margin: 5px 10px 5px 10px;
+    border: rgb(97, 96, 96) 10px solid;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#titulo-final{
+    font-weight: bold;
 }

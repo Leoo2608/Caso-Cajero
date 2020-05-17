@@ -1,5 +1,6 @@
-document.getElementById("boton1").addEventListener("click",retiro);
-
-function retiro(){
-    window.location = "retiro.html"
+function retirosoles(){
+    window.location = "retirosoles.html"
+}
+function returnmenu(){
+    window.location = "menu.html"
 }
