@@ -20,7 +20,7 @@
                 <div class="superior">
                     <p id="titulo-otrascantidades">INGRESAR MONTO A RETIRAR 
                         <br> EN MULTIPLOS DE 10</p>
-                    <input id="caja-password" type="text" placeholder="S/..." disabled> 
+                    <input id="caja-dinero" type="text" placeholder="S/..." disabled> 
                 </div>
                 <div class="opciones-padre-4">
                     <div class="opciones-der-4">
@@ -41,23 +41,23 @@
         </section>
         <section class="caja-inferior">
             <div class="numeros">
-                <button id="n1" class="botones-numero">1</button>
-                <button id="n2" class="botones-numero">2</button>
-                <button id="n3" class="botones-numero">3</button>
-                <button id="n4" class="botones-numero">4</button>
-                <button id="n5" class="botones-numero">5</button>
-                <button id="n6" class="botones-numero">6</button>
-                <button id="n7" class="botones-numero">7</button>
-                <button id="n8" class="botones-numero">8</button>
-                <button id="n9" class="botones-numero">9</button>
+                <button onclick="n1()" id="n1" class="botones-numero">1</button>
+                <button onclick="n2()" id="n2" class="botones-numero">2</button>
+                <button onclick="n3()" id="n3" class="botones-numero">3</button>
+                <button onclick="n4()" id="n4" class="botones-numero">4</button>
+                <button onclick="n5()" id="n5" class="botones-numero">5</button>
+                <button onclick="n6()" id="n6" class="botones-numero">6</button>
+                <button onclick="n7()" id="n7" class="botones-numero">7</button>
+                <button onclick="n8()" id="n8" class="botones-numero">8</button>
+                <button onclick="n9()" id="n9" class="botones-numero">9</button>
                 <button id="n10" class="botones-numero"></button>
-                <button id="n11" class="botones-numero">0</button>
-                <button id="n12" class="botones-numero">.</button>
+                <button onclick="n11()" id="n11" class="botones-numero">0</button>
+                <button onclick="n12()" id="n12" class="botones-numero">.</button>
             </div>
             <article class="opciones">
                 <button id="cancel"  onclick="cancel()" class="boton-op">CANCEL</button>
                 <button id="clean"  onclick="clean()" class="boton-op">CLEAR</button>
-                <button id="ok" onclick="ok()" class="boton-op">OK</button>
+                <button id="ok" class="boton-op" disabled>OK</button>
                 <button id="void" class="boton-op"></button>
             </article>
             <section class="relleno">
