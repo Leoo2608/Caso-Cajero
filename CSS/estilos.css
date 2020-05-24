@@ -30,17 +30,23 @@ body{
 }
 .pantalla{ 
     width: 420px;
-    height: 235px;
+    height: 265px;
     background-image:linear-gradient(to bottom,rgb(250, 250, 98),rgb(255, 246, 163) ) ;
     margin: 5px 10px 5px 10px;
     border: rgb(97, 96, 96) 10px solid;
     border-radius: 8px;
-    padding: 14px;
     font-size: 20px;
+}
+#pantalla1{
+    display: block;
+}
+#texto1{
+    padding: 1px 0px 0px 14px;
 }
 #titulo{
     font-weight: bold;
     font-size: 23px;
+    padding: 14px 0px 0px 14px;
 }
 #caja-password{
     width: 250px;
@@ -49,6 +55,17 @@ body{
     border: rgb(255, 196, 0) 2.5px solid;
     border-radius: 2px;
     font-size: 20px;
+    margin-left: 14px;
+}
+#mensaje{
+    margin-top: 20px;
+    padding-top: 25px;
+    text-align: center;
+    width: 420px; 
+    height: 70px; 
+    color: rgb(138, 0, 0);
+    display: none;
+    font-weight: bold;
 }
 #article1{
     height: 240px;
@@ -67,8 +84,8 @@ body{
 .botones-top{
     width: 55px;
     height: 31px;
-    margin-top: 13px;
-    margin-bottom: 13px;
+    margin-top: 10px;
+    margin-bottom: 9px;
     border-radius: 7px ;
     border: rgb(0, 0, 0) 1.5px solid;
     background-image: linear-gradient(to top, black, rgb(97, 97, 97));
@@ -163,62 +180,74 @@ body{
     width: 300px;
     height: 65px;  
 }
-/*=============menu.html=============*/
-.pantalla-menu{ 
-    width: 420px;
-    height: 235px;
-    background-image:linear-gradient(to bottom,rgb(250, 250, 98),rgb(255, 246, 163) ) ;
-    margin: 5px 10px 5px 10px;
-    border: rgb(97, 96, 96) 10px solid;
-    border-radius: 8px;
-    padding: 14px 0px 14px 0px;
-    font-size: 20px;
-}
+/*========MENU=======*/
+
 #titulo-menu{
     font-weight: bold;
-    font-size: 23px;
+    font-size: 30px;
+    padding-top: 25px;
     text-align: center;
+    height: 70px;
 }
 .opciones-padre{
     display: flex;
     justify-content: space-between;
-    padding: 15px 0px 15px 0px;
+    padding: 0px 0px 0px 0px;
 }
 .opciones-der{ 
     text-align: right;
+    padding: 0px 15px 0px 0px ;
+    width: 180px;
+}
+.opciones-izq{ 
+    text-align: left;
+    padding: 0px 0px 0px 15px ;
     width: 180px;
 }
 .opciones-izq p{
-    margin-top: 22px;
+    margin-top: 18px;
     font-size: 22px;
     font-weight: bold;
 }
 .opciones-der p{
-    margin-top: 20px;
-    margin-bottom: 16px;
+    margin-top: 15px;
+    margin-bottom: 0px;
     font-size: 22px;
     font-weight: bold;
 }
 .figura-izq{
     height: 190px;
-    padding-top: 5px;
+    padding-top: 3px;
 }
 .figura-der{
     height: 190px;
-    padding-top: 8px;
+    padding-top: 0px;
 }
-/*=============retiro.html=============*/
+/*=======RETIRO=======*/
 .opciones-der-retiro{ 
     text-align: right;
     width: 180px;
+    padding-right: 15px;
 }
 .opciones-der-retiro p{
-    margin-top: 21px;
-    margin-bottom: 35px;
+    margin-top: 15px;
+    margin-bottom: 19px;
     font-size: 22px;
     font-weight: bold;
+    padding-top: 2px;
 }
-/*=============retirosoles.html=============*/
+.figura-der-retiro{
+    height: 190px;
+    padding-top: 5px;
+}
+/*========RETIRO SOLES=======*/
+#titulo-retirosoles{
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 10px;
+    text-align: center;
+    height: 40px;
+}
 .opciones-padre3{
     display: flex;
     margin-top: 4px;
@@ -238,7 +267,8 @@ body{
     text-align: left;
     width: 100px;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 15px;
+    height: 160px;
 }
 .opciones-der3{
     display: flex;
@@ -251,7 +281,7 @@ body{
     width: 120px;
 }
 .opciones-izq3 p{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     text-align: right;
     margin-left: 15px ;
@@ -262,15 +292,6 @@ body{
     font-weight: bold;
     text-align: right;
     margin-right: 20px;
-}
-.botones-top-3{
-    width: 55px;
-    height: 31px;
-    margin-top: 10px;
-    margin-bottom: 9px;
-    border-radius: 7px ;
-    border: rgb(0, 0, 0) 1.5px solid;
-    background-image: linear-gradient(to top, black, rgb(97, 97, 97));
 }
 /*-------otrascantidades.html---------*/
 
@@ -293,6 +314,15 @@ body{
     border: rgb(255, 196, 0) 2.5px solid;
     border-radius: 2px;
     font-size: 20px;
+}
+#mensaje2{
+    margin-top: 50px;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    color: rgb(138, 0, 0);
+    display: none;
+    font-weight: bold;
 }
 .superior{
     text-align: center;
@@ -379,36 +409,43 @@ body{
     border-radius: 8px;
     padding: 14px;
     font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 #titulo-final{
+    padding-top: 90px;
     font-weight: bold;
 }
-/*----ultimosmovs.html----*/
-.pantalla-um{
-    width: 420px;
-    height: 235px;
-    background-image:linear-gradient(to bottom,rgb(250, 250, 98),rgb(255, 246, 163) ) ;
-    margin: 5px 10px 5px 10px;
-    border: rgb(97, 96, 96) 10px solid;
-    border-radius: 8px;
-    padding: 14px;
-    font-size: 20px;
+/* CONSULTAS*/
+.opciones-consultas{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-#titulo-um{
+    justify-content: space-between;
+    font-size: 20px;
     font-weight: bold;
-    font-size: 22px;
-    padding-top: 7px;
 }
-#iframe-um{
-    border-style: none;
-    border-radius: 8px; 
-    width: 400px;
-    background-color: rgb(245, 238, 149);
+#IZQ-consultas{
+    width: 190px;
+    display: flex;
 }
-/*---umdata.html---*/
+#DER-consultas{
+    width: 121px;
+    display: flex;
+    justify-items: right;
+}
+.figura-izq-consultas{
+    padding-top: 5px;
+}
+.figura-der-consultas{
+    padding-top: 5px;
+}
+.opciones-izq-consultas p{
+    padding: 15px 0px 0px 15px;
+}
+.opciones-der-consultas p{
+    padding: 15px 15px 0px 0px;
+}
+#mensaje3{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: green;
+}

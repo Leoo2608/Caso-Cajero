@@ -4,27 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/estilos.css">
-    <link rel="stylesheet" href="/CSS/pantalla.css">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
-    <title></title>
+    <title>Cajero</title>
 </head>
 <body>
     <section class="caja-principal">
         <section class="caja-superior">
             <article id="article1">
                 <button id="boton1" class="botones-top"><img src="iconos/arrowright.png" alt=""></button>
-                <button id="boton2" class="botones-top"><img src="iconos/arrowright.png" alt=""></button>
-                <button id="boton3" class="botones-top"><img src="iconos/arrowright.png" alt=""></button>
+                <button onclick="funcionesboton2()" id="boton2" class="botones-top"><img src="iconos/arrowright.png" alt=""></button>
+                <button onclick="funcionesboton3()" id="boton3" class="botones-top"><img src="iconos/arrowright.png" alt=""></button>
+                <button id="boton4" class="botones-top"><img src="iconos/arrowright.png" alt=""></button>
             </article>
-            <div class="pantalla">
+            
+            <div id="pantalla1" class="pantalla">
                 <p id="titulo">¡Bienvenido al Banco!</p>
-                Por favor digite su clave.
-                <input id="caja-password" type="password" disabled>  
+                <p id= "texto1">Por favor digite su clave.</p>
+                <input id="caja-password" type="password" disabled> 
+                 <div id="mensaje">***CONTRASEÑA INCORRECTA***</div>
+            </div>
+            <div id="pantalla2" class="pantalla">
+                <p id="titulo-menu">MENU PRINCIPAL</p>
+                <div class="opciones-padre">
+                    <div class="figura-izq">
+                        <img src="/iconos/Screenshot_NUEVOIZQ.png" alt="">
+                    </div>
+                    <div class="opciones-izq">
+                        <p>Retiro</p>
+                        <p>Consultas</p>
+                        <p>Operaciones</p>
+                    </div>
+                    <div class="opciones-der">
+                        <p>Transferencia</p> <br>
+                        <p>Ultimos Movimientos</p>
+                    </div>
+                    <div class="figura-der">
+                        <img src="/iconos/Screenshot_NUEVODER.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="pantalla3" class="pantalla">
+                <p id="titulo-menu">RETIRO</p>
+                <div class="opciones-padre">
+                    <div class="figura-izq">
+                        <img src="/iconos/Screenshot_NUEVOIZQ.png" alt="">
+                    </div>
+                    <div class="opciones-izq">
+                        <p>Retiro Soles</p>                     
+                    </div>
+                    <div class="opciones-der-retiro">
+                        <p>Retirar Dolares</p> <br>
+                        <p>Cancelar</p>
+                    </div>
+                    <div class="figura-der-retiro">
+                        <img src="/iconos/Screenshot_NUEVODER.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="pantalla4" class="pantalla">
+                <p id="titulo-retirosoles">RETIRO</p>
+                <div class="opciones-padre3">
+                    <div id="IZQ">
+                        <div class="figura-izq">
+                            <img src="/iconos/Screenshot_NUEVOIZQ.png" alt="">
+                        </div>
+                        <div class="opciones-izq3">
+                            <p>S/.20</p> 
+                            <p>S/.150</p>
+                            <p>S/.300</p>                    
+                        </div>
+                    </div>
+                
+                    <div id="DER">
+                        <div class="opciones-der3">
+                            <p>S/.100</p> 
+                            <p>S/.200</p>
+                            <p>Otras Cantidades</p>
+                            <p>Cancelar</p>
+                        </div>
+                        <div class="figura-der-retirosoles">
+                            <img src="/iconos/naranjas4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="pantalla5" class="pantalla-otrascantidades">
+                <div class="superior">
+                    <p id="titulo-otrascantidades">INGRESAR MONTO A RETIRAR 
+                        <br> EN MULTIPLOS DE 10</p>
+                    <input id="caja-dinero" type="text" placeholder="S/..." disabled> 
+                </div>
+                <div class="opciones-padre-4">
+                    <div id="mensaje2">***Solo Multiplos de 10***</div>
+                    <div class="opciones-der-4">
+                        <p>Confirmar</p>
+                        <p>Corregir</p>
+                        <p>Cancelar</p>
+                    </div>
+                    <div class="figura-der-4">
+                        <img src="iconos/naranjitaremp.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="pantalla6" class="pantalla-otrascantidades">
+                <div class="superior">
+                    <p class="titulo-transaccion">TRANSACCION PROCESADA</p>
+                    <p class="titulo-transaccion">¿Desea realizar otra transacción?</p>
+                </div>
+                <div class="opciones-padre-transaccion">
+                    <div class="opciones-der-transaccion">
+                        <p>Si</p>
+                        <p>No</p>
+                    </div>
+                    <div class="figura-der-transaccion">
+                        <img src="iconos/2flechas.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="pantalla7" class="pantalla-final">
+                <p id="titulo-final">GRACIAS, <br> HASTA LUEGO</p>
+            </div>
+            <div id="pantallaconsultas" class="pantalla">
+                <p id="titulo-menu">CONSULTAS</p>
+                <div class="opciones-consultas">
+                    <div id="IZQ-consultas">
+                        <div class="figura-izq-consultas"><img src="iconos/triangulo1izq.png" alt=""></div>
+                        <div class="opciones-izq-consultas">
+                            <p>Consultar Saldo</p>                     
+                        </div>
+                    </div>
+                    <div id="DER-consultas">
+                        <div class="opciones-der-consultas">
+                            <p>Cancelar</p>
+                         </div>
+                         <div class="figura-der-consultas"><img src="iconos/triangulo1.png" alt=""></div>
+                    </div>
+                </div>
+                <div id="mensaje3"></div>
             </div>
             <article id="article2">
-                <button id="boton4" class="botones-top"><img src="iconos/arrowleft.png" alt=""></button>
                 <button id="boton5" class="botones-top"><img src="iconos/arrowleft.png" alt=""></button>
-                <button id="boton6" class="botones-top"><img src="iconos/arrowleft.png" alt=""></button>
+                <button onclick="funcionesboton6()" id="boton6" class="botones-top"><img src="iconos/arrowleft.png" alt=""></button>
+                <button onclick="funcionesboton7()" id="boton7" class="botones-top"><img src="/iconos/arrowleft.png" alt=""> </button>
+                <button onclick="funcionesboton8()" id="boton8" class="botones-top"><img src="/iconos/arrowleft.png" alt=""> </button>
             </article>
         </section>
         <section class="caja-inferior">
@@ -70,5 +192,7 @@
     </section>
     <script src="JS/numeros.js"></script>
     <script src="/JS/opciones.js" ></script>
+    <script src="JS/funcionbotones.js"></script>
+
 </body>
 </html>
