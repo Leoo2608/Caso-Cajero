@@ -1,10 +1,10 @@
 //* Funciones Clear, Cancel, Ok *//
 function cancel(){
-    var elemento = document.getElementById(caja);
+    var elemento = document.getElementById(idcaja);
     elemento.value = ""; 
 }
 function clean(){
-    var elemento = document.getElementById(caja);
+    var elemento = document.getElementById(idcaja);
     elemento.value =  elemento.value.substring(0, elemento.value.length - 1);
 }
 
@@ -46,13 +46,15 @@ function funcionesboton8(){
 
 function funcionesboton7(){
     if(document.getElementById("pantalla4").style.display == "block"){
+        document.getElementById("caja-dinero").value = ""; 
+        document.getElementById("mensaje2").style.display = "none";
         document.getElementById("pantalla4").style.display = "none";
         document.getElementById("pantalla5").style.display = "block";
     }else if(document.getElementById("pantalla5").style.display == "block"){
         clean();
     }else if(document.getElementById("pantalla6").style.display == "block"){
         document.getElementById("caja-dinero").value = ""; 
-        document.getElementById("mensaje2").innerHTML = "";
+        document.getElementById("mensaje2").style.display = "none"; 
         document.getElementById("mensaje2").style.color = "rgb(138, 0, 0)";
         document.getElementById("pantalla6").style.display = "none";
         document.getElementById("pantalla2").style.display = "block";
